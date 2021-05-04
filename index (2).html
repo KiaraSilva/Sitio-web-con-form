@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <title> Formulario de consulta </title>
+    <style>
+      head, body{
+        background-color: #73C6B6;
+        font-family: "Trirong", serif;
+      }
+        input[type=text], [type=password] {
+          font-family: "Trirong", serif;
+          width: 40%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }   
+          select {
+          width: 50%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f9faf9;
+}
+
+textarea {
+  font-family: "Trirong", serif;
+  width: 50%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+        input[type=submit] {
+          width: 100%;
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #9e0000;
+        }
+        
+        div {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+        </style>
+</head>
+
+<body>
+    
+    <form action="kiasilva66@gmail.com" method="post" enctype="text/plain">
+
+Usuario <input type = "text" name="Nombre">
+<br>
+
+Contraseña <input type="password" name="nombre">
+<br>
+<br>
+Motivo de su consulta
+<select name="Consulta sugerida">
+    <option value = "Venta Mayorista">Venta Mayorista</option>
+    <option value = "Puntos de venta">Puntos de venta</option>
+    <option value ="Envíos al interior del País">Envíos al interior del País</option>
+    <option value= "Formas de pago">Formas de pago</option>
+    <option value= "Otros">Formas de pago</option>
+
+    </select>
+    <br>
+    <br>
+    ¿Como prefiere recibir la información? 
+    <br>
+  
+  <input type="radio" id="WhatsApp" name="Contacto" value="WhatsApp" >
+   <label for= "WhatsApp">WhatsApp</label>
+   <br>
+     <input type="radio" id="Instagram" name="Contacto" value="Instagram">
+     <label for= "Instagram">Instagram</label>
+    <br>  
+  <input type="radio" id="mail" name="Contacto" value="mail">
+    <label for= "mail">Mail</label>
+
+    <br>
+    <br>
+    <textarea name="comentario" rows="10" cols="40">Escriba aquí el motivo de tu consulta</textarea>
+    <input type="submit" value="Enviar">
+<br>
+    
+    </form>
+</body>
+</html>
